@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mvc-003-recevieparams:war">
+    <output-path>$PROJECT_DIR$/mvc-003-recevieparams/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>mvc-003-recevieparams</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mvc-003-recevieparams-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="mvc-003-recevieparams:war exploded" />
+    </root>
+  </artifact>
+</component>

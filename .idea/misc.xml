@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mvc--007-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-001-helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-002-requestmapping" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-003-recevieparams" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-004-return" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-005-url-pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-006-path" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-008-forward-redirect" />
+    <file type="web" url="file://$PROJECT_DIR$/mvc-009-exception-handler" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mvc-001-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc-002-requestmapping/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc-003-recevieparams/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc-004-return/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc-005-url-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc-006-path/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc--007-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc-008-forward-redirect/pom.xml" />
+        <option value="$PROJECT_DIR$/mvc-009-exception-handler/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

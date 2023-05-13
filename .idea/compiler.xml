@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mvc-001-helloworld" />
+        <module name="mvc-002-requestmapping" />
+        <module name="mvc-004-return" />
+        <module name="mvc-009-exception-handler" />
+        <module name="mvc-008-forward-redirect" />
+        <module name="mvc-006-path" />
+        <module name="mvc--007-ssm" />
+        <module name="mvc-003-recevieparams" />
+        <module name="mvc-005-url-pattern" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mvc--007-ssm" target="1.8" />
+      <module name="mvc-001-helloworld" target="1.8" />
+      <module name="mvc-002-requestmapping" target="1.8" />
+      <module name="mvc-003-recevieparams" target="1.8" />
+      <module name="mvc-004-return" target="1.8" />
+      <module name="mvc-005-url-pattern" target="1.8" />
+      <module name="mvc-006-path" target="1.8" />
+      <module name="mvc-008-forward-redirect" target="1.8" />
+      <module name="mvc-009-exception-handler" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

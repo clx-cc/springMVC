@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--开启组件扫描-->
+    <context:component-scan base-package="com.cao.mvc.controller"/>
+    <!--声明视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--        前缀：视图文件的路径-->
+        <property name="prefix" value="/WEB-INF/view/"/>
+<!--        后缀：视图文件的扩展名-->
+        <property name="suffix" value=".jsp"/>
+
+    </bean>
+        <!--
+            第二种处理静态资源的方式：
+            <mvc:resources mapping="" location=""/>
+            加入这个标签后，框架会自动创建ResourceHttpRequestHandler处理器对象
+            让这个对象处理静态资源的访问，不依赖于tomcat服务器。
+            mapping：访问静态资源的url地址。使用通配符**
+            location：静态资源项目中的位置
+            /images/**：表示images目录下的所有子目录
+        -->
+
+    <mvc:resources mapping="/images/**" location="/images/"/>
+    <mvc:resources mapping="/html/**" location="/html/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
+    <mvc:resources mapping="/static/**" location="/static/"/>
+<!--    @RequestMapping和resources有冲突，需要加上注解驱动才可以访问静态资源-->
+    <mvc:annotation-driven/>
+
+
+
+<!--    第一种处理静态资源的方式
+        需要在springMVC的配置文件中加入：<mvc:default-servlet-handler/>和<mvc:annotation-driven/>
+        原理是：当我们加上这个标签之后，框架会自动创建DefaultServletHttpRequestHandler这个控制器对象，
+        这个控制器对象会将接收到的请求转发给tomcat的default这个servlet
+-->
+<!--    <mvc:default-servlet-handler/>-->
+<!--    &lt;!&ndash;    添加注解驱动&ndash;&gt;-->
+<!--    <mvc:annotation-driven/>-->
+
+</beans>
